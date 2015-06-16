@@ -100,7 +100,7 @@
   $field_name = $_POST['cf_name'];
   $field_email = $_POST['cf_email'];
   $field_message = $_POST['cf_message'];
-  $mail_to = 'test@test-mail.com<script cf-hash="f9e31" type="text/javascript">
+  $mail_to = vfrias1290@gmail.com<script cf-hash="f9e31" type="text/javascript">
   /* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script>';
   $subject = 'Message from a site visitor ' . $field_name;
   $body_message = 'From: '.$field_name."\n";
@@ -109,25 +109,7 @@
   $headers = "From: $cf_email\r\n";
   $headers .= "Reply-To: $cf_email\r\n";
   $mail_status = mail($mail_to, $subject, $body_message, $headers);
-  if ($mail_status) { ?>
-    <script language="javascript" type="text/javascript">
-        // Print a message
-        alert('Thank you for the message. We will contact you shortly.');
-        // Redirect to some page of the site. You can also specify full URL, e.g. http://template-help.com
-        window.location = 'contact_page.html';
-    </script>
-<?php
-}
-else { ?>
-    <script language="javascript" type="text/javascript">
-        // Print a message
-        alert('Message failed. Please, send an email to gordon@template-help.com<script cf-hash="f9e31" type="text/javascript">
-/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script>');
-        // Redirect to some page of the site. You can also specify full URL, e.g. http://template-help.com
-        window.location = 'contact_page.html';
-    </script>
-<?php
-}?>
+  
   <p>Vfrias1290@gmail.com</p>
    <a href="https://www.facebook.com/vanessa.frias1"><i class="fa fa-facebook-official"></i></a>
    <a href="https://www.linkedin.com/pub/vanessa-frias/b8/159/b91"><i class="fa fa-linkedin-square"></i></a>
